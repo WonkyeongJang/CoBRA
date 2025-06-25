@@ -1,11 +1,19 @@
-### Clone the repo.
-git clone https://github.com/WonKyeongJang/CoBRA
-cd ./CoBRA
-git clone https://github.com/lbcb-sci/RiNALMo
+# CoBRA
 
-### create conda environment for CoBRA
+## Clone the repo
+
+```bash
+git clone https://github.com/WonKyeongJang/CoBRA
+cd CoBRA
+git clone https://github.com/lbcb-sci/RiNALMo
+```
+
+### Create conda environment for CoBRA
+```bash
 conda env create -f ./environment.yml
 conda activate CoBRA
-
+```
 ### Usuage
+```bash
 python ./main.py ./sample.fasta  ./embeddings ./sample.csv
+```
