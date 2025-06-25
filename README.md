@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/WonKyeongJang/CoBRA
-cd ./CoBRA
+cd CoBRA
 git clone https://github.com/lbcb-sci/RiNALMo
 ```
 
@@ -15,6 +15,5 @@ conda activate CoBRA
 ```
 ### Usuage
 ```bash
-cd ./CoBRA
-python ./main.py ./sample/sample.fasta  ./sample/embeddings ./sample/sample.csv
+python ./main.py ./sample.fasta  ./embeddings ./sample.csv
 ```
