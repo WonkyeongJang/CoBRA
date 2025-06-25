@@ -15,5 +15,5 @@ conda activate CoBRA
 ```
 ### Usuage
 ```bash
-python ./main.py ./sample.fasta  ./embeddings ./sample.csv
+python main.py sample/sample.fasta sample/embeddings sample/sample.csv
 ```
