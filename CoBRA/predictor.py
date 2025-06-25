@@ -1,11 +1,4 @@
 #!/usr/bin/env python3
-"""
-predictor.py
-
-CoBRA 예측 스크립트: 저장된 임베딩(.pt)들을 읽어CoBRA 모델로 이진 예측을 수행합니다.
-Usage:
-    python predictor.py <임베딩 디렉토리> <결과 CSV 파일 경로> [<device>]
-"""
 import os
 import argparse
 import torch
@@ -13,6 +6,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 import csv
 from tqdm import tqdm  # 프로그레스바 추가
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 class CoBRA(nn.Module):
     def __init__(self, input_dim=1280, hidden_dim=64, output_dim=2):
@@ -71,7 +66,8 @@ def run_folder(
 ):
     # ── 모델 로드 ────────────────────────────────────────
     model = CoBRA().to(device)
-    weight_path = "./weight/CoBRA.pt"
+    weight_path = os.path.join(BASE_DIR, "weight", "CoBRA.pt")
+
     state = torch.load(weight_path, map_location=device)
     model.load_state_dict(state)
     model.eval()
