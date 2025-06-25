@@ -54,6 +54,7 @@ def csv_file(path: str) -> Path:
     return p
 
 def main():
+    print(f"{ASCII_BANNER} is running!")
     parser = argparse.ArgumentParser(
         description=ASCII_BANNER,
         formatter_class=argparse.RawDescriptionHelpFormatter
