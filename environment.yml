@@ -26,7 +26,7 @@ dependencies:
   - cuda-nvrtc=11.8.89=0
   - cuda-nvtx=11.8.86=0
   - cuda-runtime=11.8.0=0
-  - nvidia::cuda-nvcc=11.6
+  - nvidia::cuda-nvcc=11.8
   - docker-pycreds=0.4.0=py_0
   - filelock=3.12.4=pyhd8ed1ab_0
   - fsspec=2023.9.2=pyh1a96a4e_0
