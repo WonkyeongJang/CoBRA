@@ -4,7 +4,7 @@
 
 ```bash
 git clone https://github.com/WonKyeongJang/CoBRA
-cd CoBRA
+cd ./CoBRA
 git clone https://github.com/lbcb-sci/RiNALMo
 ```
 
