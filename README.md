@@ -7,7 +7,7 @@ cd ./CoBRA
 git clone https://github.com/lbcb-sci/RiNALMo
 ```
 
-### Create conda environment for CoBRA
+### Create conda enviroment for CoBRA
 ```bash
 conda env create -f ./environment.yml
 conda activate CoBRA
